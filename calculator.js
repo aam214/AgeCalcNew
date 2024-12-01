@@ -8,9 +8,10 @@ if (ageValue === ""){
   alert("Please enter date of birth 🎂")
 } else {
   const userAge = birthdayCalculation(ageValue);
-  console.log(userAge);
+  userAllowed(userAge);
 }
 }
+
 
 function birthdayCalculation(ageValue) {
 const currentDate = new Date();
@@ -24,6 +25,14 @@ if (userBirthMonth < 0 ||
   userAge--;
 }
 return userAge;
+}
+
+function userAllowed(userAge) {
+  if (userAge === 21 || userAge >21) {
+    yourAge.innerHTML = "Welcome to Baxter's Brewery!"
+  } else{
+    yourAge.innerHTML ="You must be 21 to enter the site."
+  }
 }
 
 buttonEnter.addEventListener("click", userBirthday);
