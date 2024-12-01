@@ -1,11 +1,15 @@
 const buttonEnter = document.getElementById("button-enter");
 const birthDate = document.getElementById("date-of-birth");
 const yourAge = document.getElementById("your-age");
+const enterDate = document.getElementById("enter-date");
 
 function userBirthday() {
 const ageValue = birthDate.value;
 if (ageValue === ""){
-  alert("Please enter date of birth 🎂")
+  enterDate.innerHTML = "Please enter date of birth ⚠️"
+  setTimeout(() => {
+   enterDate.innerHTML = ""; 
+  }, 3500);
 } else {
   const userAge = birthdayCalculation(ageValue);
   userAllowed(userAge);
@@ -29,7 +33,7 @@ return userAge;
 
 function userAllowed(userAge) {
   if (userAge === 21 || userAge >21) {
-    yourAge.innerHTML = "Welcome to Baxter's Brewery!"
+    yourAge.innerHTML = "Welcome to the brewery!🍻"
   } else{
     yourAge.innerHTML ="You must be 21 to enter the site."
   }
