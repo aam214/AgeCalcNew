@@ -67,10 +67,6 @@ font-variation-settings:
   background-color:#2b1e147e;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
-p{
-  font-size: 25px;
-  letter-spacing: 1.2px;
-}
 label{
   font-size: 40px;
   align-items: baseline;
@@ -109,6 +105,7 @@ font-weight:400;
 border-radius: 10px;
 border: 3px solid white;
 transition: 2000ms;
+cursor: pointer;
 width: 200px;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 border-radius: 9px;
@@ -116,4 +113,23 @@ border-radius: 9px;
 button:hover{
   width: 250px;
   opacity: 0.8;
+}
+.your-age{
+  color: rgb(253, 202, 106);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight:400;
+font-style: normal;
+font-variation-settings:
+  "slnt" 0,
+  "wdth" 100,
+  "GRAD" 0,
+  "XOPQ" 96,
+  "XTRA" 468,
+  "YOPQ" 79,
+  "YTAS" 750,
+  "YTDE" -203,
+  "YTFI" 738,
+  "YTLC" 514,
+  "YTUC" 712;
+font-weight:400;
 }
