@@ -12,10 +12,15 @@ if (ageValue === ""){
 
 function birthdayCalculation(ageValue) {
 const currentDate = new Date();
-const birthYear = new Date(ageValue);
+const birthDay = new Date(ageValue);
 
-const userAge = currentDate.getFullYear() - birthYear.getFullYear();
-console.log(userAge);
+const userYear = currentDate.getFullYear() - birthDay.getFullYear();
+
+
+const userMonth = currentDate.getMonth() - birthDay.getMonth();
+console.log(userMonth);
+
+if (userMonth < 0 || (userMonth === 0 && currentDate.getDate() < b))
 }
 
 buttonEnter.addEventListener("click", userBirthday);
