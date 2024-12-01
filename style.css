@@ -1,31 +1,58 @@
 body{
-  background-color: rgb(5, 5, 4);
+  background-image: url(bar.jpg);
+  background-size: cover;
+  background-position: center;
 color: white;
 font-family: sans-serif;
 }
 h1{
-  font-size: 60px;
+  font-size: 140px;
+  line-height: 1.5;
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   border-radius: 9px;
   margin-top: 90px;
-  background-color: rgba(171, 214, 51, 0.774);
+ background-color:#2b1e147e;
   padding: 10px 20px 10px 20px;
   margin: 20px;
 }
 h2{
 margin-top: 10px;
-font-size: 40px;
+letter-spacing: 1.2px;
+font-size: 30px;
 margin-top: 70px;
 }
 .container{
-  margin: 0 auto;
-  display: block;
+margin: 0 auto;
+display: block;
 text-align: center;
+font-family: "Roboto Flex", sans-serif;
+font-weight:400;
+font-style: normal;
+font-variation-settings:
+  "slnt" 0,
+  "wdth" 100,
+  "GRAD" 0,
+  "XOPQ" 96,
+  "XTRA" 468,
+  "YOPQ" 79,
+  "YTAS" 750,
+  "YTDE" -203,
+  "YTFI" 738,
+  "YTLC" 514,
+  "YTUC" 712;
   max-width: 700px;
   padding: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 9px;
-  background-color:rgba(171, 214, 51, 0.774);
+  background-color:#2b1e147e;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+p{
+  font-size: 25px;
+  letter-spacing: 1.2px;
 }
 label{
   font-size: 40px;
@@ -36,15 +63,20 @@ input{
   border-radius: 4px;
   font-size: 30px;
   margin: 20px;
+  font-family: "Roboto Flex", sans-serif;
+font-weight:400;
 }
 button{
-  padding: 15px 30px 15px 30px;
-  margin-top: 70px;
-  background-color:rgb(63, 136, 99);
-  color:white;
-  border-radius: 10px;
-  border: 3px solid white;
-  transition: 2000ms;
+padding: 15px 30px 15px 30px;
+background-color:#2A526B;
+color:white;
+margin-top: 20px;
+font-size: 20px;
+font-family: "Roboto Flex", sans-serif;
+font-weight:400;
+border-radius: 10px;
+border: 3px solid white;
+transition: 2000ms;
 width: 200px;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 border-radius: 9px;
