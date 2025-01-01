@@ -3,7 +3,7 @@ const birthDate = document.getElementById("date-of-birth");
 const yourAge = document.getElementById("your-age");
 const enterDate = document.getElementById("enter-date");
 
-function userBirthday() {
+function enterUserBirthday() {
 const ageValue = birthDate.value;
 if (ageValue === ""){
   enterDate.innerHTML = "Please enter date of birth ⚠️"
@@ -19,11 +19,13 @@ if (ageValue === ""){
 
 function birthdayCalculation(ageValue) {
 const currentDate = new Date();
+//Compares birthday with the current date
 const birthDay = new Date(ageValue);
 
 let userAge = currentDate.getFullYear() - birthDay.getFullYear();
 const userBirthMonth = currentDate.getMonth() - birthDay.getMonth();
 
+//Checks if birthday has occured yet if not subtract by one
 if (userBirthMonth < 0 || 
 (userBirthMonth === 0 && currentDate.getDate() < birthDay.getDate())){
   userAge--;
