@@ -11,8 +11,8 @@ if (ageValue === ""){
    enterDate.innerHTML = ""; 
   }, 3500);
 } else {
-  const userAge = birthdayCalculation(ageValue);
-  userAllowed(userAge);
+  const userYearAge = birthdayCalculation(ageValue);
+  userAllowed(userYearAge);
 }
 }
 
@@ -22,15 +22,17 @@ const currentDate = new Date();
 //Compares birthday with the current date
 const birthDay = new Date(ageValue);
 
-let userAge = currentDate.getFullYear() - birthDay.getFullYear();
+let userYearAge = currentDate.getFullYear() - birthDay.getFullYear();
 const userBirthMonth = currentDate.getMonth() - birthDay.getMonth();
-
+console.log(userBirthMonth);
 //Checks if birthday has occured yet if not subtract by one
-if (userBirthMonth < 0 || 
-(userBirthMonth === 0 && currentDate.getDate() < birthDay.getDate())){
-  userAge--;
+if (userBirthMonth < 0 || (userBirthMonth === 0 && currentDate.getDate() < birthDay.getDate())) 
+{
+userYearAge--;
 }
-return userAge;
+console.log(userYearAge);
+return userYearAge;
+
 }
 
 function userAllowed(userAge) {
@@ -41,4 +43,4 @@ function userAllowed(userAge) {
   }
 }
 
-buttonEnter.addEventListener("click", userBirthday);
+buttonEnter.addEventListener("click", enterUserBirthday);
