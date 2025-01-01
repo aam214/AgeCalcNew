@@ -35,8 +35,8 @@ return userYearAge;
 
 }
 
-function userAllowed(userAge) {
-  if (userAge === 21 || userAge >21) {
+function userAllowed(userYearAge) {
+  if (userYearAge === 21 || userYearAge >21) {
     yourAge.innerHTML = "Welcome to the brewery!🍻"
   } else{
     yourAge.innerHTML ="You must be 21 to enter the site."
